@@ -8,7 +8,7 @@ include_once('inc/class-wp-bootstrap-navwalker.php');
 
 // Register Resources
 
-function graceland()
+function EENG()
 {
 
 
@@ -58,7 +58,7 @@ function graceland()
   wp_enqueue_script('main-js');
 }
 
-add_action('wp_enqueue_scripts', 'graceland');
+add_action('wp_enqueue_scripts', 'EENG');
 
 
 
@@ -69,8 +69,8 @@ add_action('after_setup_theme', 'register_nero_primary_menu');
 function register_nero_primary_menu()
 {
   register_nav_menus(array(
-    'primary'  =>   __('Primary Menu', 'graceland'),
-    'Footer'  =>  __('Footer Menu', 'graceland')
+    'primary'  =>   __('Primary Menu', 'EENG'),
+    'Footer'  =>  __('Footer Menu', 'EENG')
   ));
 }
 
@@ -484,7 +484,7 @@ function display_footer_large_text()
 
 { ?>
 
-  <!-- <input type="text" name="footer_large_text" value="<? php // echo get_option('footer_large_text'); 
+  <!-- <input type="text" name="footer_large_text" value="<?php // echo get_option('footer_large_text'); 
                                                           ?>" id="footer_large_text" /> -->
 
   <textarea id="footer_large_text" name="footer_large_text"><?php echo get_option('footer_large_text'); ?></textarea>

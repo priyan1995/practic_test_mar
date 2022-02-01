@@ -1,0 +1,199 @@
+/*
+Theme Name: EENG
+Theme URI://EENG
+Author:Priyan Darshana
+Author URI:
+Description:This theme Has been made for EENG website.
+version:1.0
+tags:one, two
+textdomain:
+
+*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(21 20 25 / 90%);
+    font-weight: 700;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+p {
+    color: rgba(128, 128, 128, 1);
+    line-height: 30px;
+    transition: 0.5s;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #0f6936;
+}
+
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+/* ============ responsive */
+
+
+@media (max-width:992px) {
+    .pd-padd {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .pd-menu-bar {
+        padding: 0;
+    }
+    .mob-logo {
+        width: 210px;
+        position: absolute;
+        top: 0;
+        z-index: 9;
+    }
+    .pd-mob-nav-bar {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: right;
+    }
+    .navbar-expand-lg {
+        width: 100%;
+        align-items: flex-end;
+        text-align: right;
+    }
+    .navbar-dark .navbar-toggler {
+        margin-left: auto;
+    }
+    .navbar-dark .navbar-toggler {
+        color: rgb(31 30 36);
+        border-color: rgb(31 30 36);
+        box-shadow: none !important;
+    }
+    .navbar-dark .navbar-toggler-icon {
+        filter: invert(1);
+    }
+    .header {
+        background: white;
+        padding: 10px 0;
+    }
+    button {
+        outline: none !important;
+    }
+    #main-menu {
+        height: 100vh;
+        text-align: center;
+        padding-top: 50px;
+    }
+    section {
+        overflow-x: hidden;
+    }
+    .main-banner-content h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .main-banner-content p {
+        text-align: center
+    }
+    .about-home-sec .left-img img {
+        margin-top: 0;
+        height: auto;
+    }
+    .pl-50 {
+        padding-left: 15px;
+    }
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .about-home-sec h2 {
+        margin-top: 15px;
+    }
+    * {
+        text-align: center;
+    }
+   
+    .header {
+        background: #ffffff00;
+    }
+    .sticky {
+        background: white;
+    }
+    .navbar-dark .navbar-toggler {
+        border-color: transparent;
+    }
+    .logo-wrap .custom-logo-link img {
+        margin-top: -5px;
+    }
+    .header.sticky .custom-logo-link img {
+        margin-top: 5px;
+    }
+   
+    #main-menu .menu-item {
+        padding: 5px 6px;
+    }
+    .logo-wrap {
+        text-align: left;
+    }
+    .navbar-expand-lg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header-phone-menu .nav-link {
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+@media (min-width:767px) and (max-width:992px) {
+  
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 13px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1300px) {
+    a.nav-link {
+        padding: 6px 2px !important;
+        font-size: 13px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 13px !important;
+    }
+  
+}
+
+@media (min-width:992px) and (max-width:1335px) {
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 13px !important;
+    }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .header-phone-menu {
+        display: none;
+    }
+}

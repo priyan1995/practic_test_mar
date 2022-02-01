@@ -38,7 +38,7 @@
 
 
   <title><?php //wp_title(); 
-          ?> graceland</title>
+          ?> EENG</title>
   <?php wp_head(); ?>
 
 </head>

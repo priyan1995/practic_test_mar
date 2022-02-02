@@ -7,31 +7,29 @@ get_header();
 
 <img src="<?php echo bloginfo('template_url') ?>/assets/img/banner.jpg" class="w-100">
 
-<section class="pd-h-f-o-c-sec pd-padd pd-dbl-p-top">
+<section class="pd-h-f-o-c-sec pd-padd pd-dbl-p-top pd-dbl-p-bot">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h2 class="pd-main-heading text-center">Hear From <span>Our Clients</span></h2>
 
-                <div class="clientSlide">
+                <div class="pd-client-slide">
                     <div>
-                        <h3>1</h3>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100">
                     </div>
                     <div>
-                        <h3>2</h3>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100">
                     </div>
                     <div>
-                        <h3>3</h3>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100">
                     </div>
                     <div>
-                        <h3>4</h3>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100">
                     </div>
                     <div>
-                        <h3>5</h3>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100">
                     </div>
-                    <div>
-                        <h3>6</h3>
-                    </div>
+
                 </div>
 
 
@@ -40,5 +38,18 @@ get_header();
     </div>
 </section>
 
+<!-- EENC Job post section -->
+<section class="pd-ee-jp-sec pos-rel pd-padd" style="background-image: url(<?php echo bloginfo('template_url') ?>/assets/img/eenc-job.jpg);">
+    <div class="pd-bg-blue-grad"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-left">
+                <h2><span>EENC</span> Job Posts</h2>
+                <p>Please sign in to view all job posts for EENC Members.</p>
+                <a href="#">Sign in</a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>

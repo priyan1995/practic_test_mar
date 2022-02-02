@@ -45,25 +45,25 @@ p {
     margin-top: 40px;
 }
 
-.pd-main-heading{
+.pd-main-heading {
     font-weight: 600;
 }
 
-.pd-main-heading span{
+.pd-main-heading span {
     font-family: 'Source Serif 4', sans-serif;
     font-weight: 600;
     color: #ac1026;
 }
 
-.pd-padd{
+.pd-padd {
     padding: 2.5% 0;
 }
 
-.pd-dbl-p-top{
+.pd-dbl-p-top {
     padding-top: 5%;
 }
 
-.pd-dbl-p-bottom{
+.pd-dbl-p-bot {
     padding-bottom: 5%;
 }
 
@@ -80,6 +80,70 @@ p {
     padding-top: 0;
 }
 
+.slick-prev:before, .slick-next:before {
+    color: #ac1026;
+}
+
+.pd-client-slide {
+    margin-top: 50px;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.pd-ee-jp-sec h2 {
+    color: #d9f5df;
+    font-weight: 500;
+}
+
+.pd-ee-jp-sec h2 span {
+    color: white;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.pd-ee-jp-sec p {
+    color: #d9f5df;
+    font-size: 20px;
+    max-width: 35%;
+}
+
+.pd-ee-jp-sec a {
+    background: #d9f5df;
+    min-width: 22%;
+    display: inline-block;
+    text-align: center;
+    padding: 7px;
+    font-weight: 500;
+    color: #41495ad9;
+    border-radius: 7px;
+    margin-top: 40px;
+}
+
+.pd-ee-jp-sec {
+    padding: 5% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 32%;
+}
+
+.pd-bg-blue-grad {
+    position: absolute;
+    background: linear-gradient(90deg, #3e4658, transparent);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
 /* ============ responsive */
 
 
@@ -88,103 +152,128 @@ p {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     .pd-menu-bar {
         padding: 0;
     }
+
     .mob-logo {
         width: 210px;
         position: absolute;
         top: 0;
         z-index: 9;
     }
+
     .pd-mob-nav-bar {
         width: 100%;
         max-width: 100%;
         flex: 0 0 100%;
         text-align: right;
     }
+
     .navbar-expand-lg {
         width: 100%;
         align-items: flex-end;
         text-align: right;
     }
+
     .navbar-dark .navbar-toggler {
         margin-left: auto;
     }
+
     .navbar-dark .navbar-toggler {
         color: rgb(31 30 36);
         border-color: rgb(31 30 36);
         box-shadow: none !important;
     }
+
     .navbar-dark .navbar-toggler-icon {
         filter: invert(1);
     }
+
     .header {
         background: white;
         padding: 10px 0;
     }
+
     button {
         outline: none !important;
     }
+
     #main-menu {
         height: 100vh;
         text-align: center;
         padding-top: 50px;
     }
+
     section {
         overflow-x: hidden;
     }
+
     .main-banner-content h2 {
         font-size: 40px;
         text-align: center;
     }
+
     .main-banner-content p {
         text-align: center
     }
+
     .about-home-sec .left-img img {
         margin-top: 0;
         height: auto;
     }
+
     .pl-50 {
         padding-left: 15px;
     }
+
     h2 {
         font-size: 35px;
         text-align: center;
     }
+
     .about-home-sec h2 {
         margin-top: 15px;
     }
+
     * {
         text-align: center;
     }
-   
+
     .header {
         background: #ffffff00;
     }
+
     .sticky {
         background: white;
     }
+
     .navbar-dark .navbar-toggler {
         border-color: transparent;
     }
+
     .logo-wrap .custom-logo-link img {
         margin-top: -5px;
     }
+
     .header.sticky .custom-logo-link img {
         margin-top: 5px;
     }
-   
+
     #main-menu .menu-item {
         padding: 5px 6px;
     }
+
     .logo-wrap {
         text-align: left;
     }
+
     .navbar-expand-lg {
         padding-left: 0;
         padding-right: 0;
     }
+
     .header-phone-menu .nav-link {
         width: fit-content;
         margin: auto;
@@ -192,7 +281,7 @@ p {
 }
 
 @media (min-width:767px) and (max-width:992px) {
-  
+
     .navbar-dark .navbar-nav .nav-link {
         font-size: 13px;
     }
@@ -203,10 +292,11 @@ p {
         padding: 6px 2px !important;
         font-size: 13px;
     }
+
     .navbar-dark .navbar-nav .nav-link {
         font-size: 13px !important;
     }
-  
+
 }
 
 @media (min-width:992px) and (max-width:1335px) {

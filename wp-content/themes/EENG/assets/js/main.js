@@ -21,8 +21,8 @@ jQuery(document).ready(function(){
     //     }
     // });
 
-    $('.clientSlide').slick({
-        centerMode: true,
+    $('.pd-client-slide').slick({
+        centerMode: false,
         centerPadding: '60px',
         slidesToShow: 3,
         responsive: [

@@ -54,7 +54,7 @@ get_header();
 
 
 <!-- latest news section -->
-<section class="pos-rel pd-padd pd-latest-news-sec pd-dbl-p-top">
+<section class="pos-rel pd-padd pd-latest-news-sec pd-dbl-p-top pd-dbl-p-bot">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
@@ -193,7 +193,179 @@ get_header();
     </div>
 </section>
 
+<!-- EENC Upcoming events section -->
 
+<section class="pos-rel pd-eenc-upc-ent pd-dbl-p-top pd-dbl-p-bot">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="pd-main-heading pd-mb-50">EENC <span>Upcoming Events</span></h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+
+                    <!-- card -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="pd-cal-card">
+                            <div class="pd-crd-bdy">
+                                <div class="pd-cal-date">
+                                    <div>
+                                        <h3>19</h3>
+                                    </div>
+                                    <div>
+                                        <p> <strong>November</strong></p>
+                                        <p>08.00 am - 04.30 pm</p>
+                                    </div>
+                                </div>
+                                <h4>Graduate Training Programe</h4>
+                                <div class="pd-inf-cal-sc">
+                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
+                                    <p><i class="fas fa-male"></i>200 Seats</p>
+                                </div>
+                            </div>
+                            <div class="pd-b-o">
+                                <a href="#">Booking Open</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="pd-cal-card">
+                            <div class="pd-crd-bdy">
+                                <div class="pd-cal-date">
+                                    <div>
+                                        <h3>25</h3>
+                                    </div>
+                                    <div>
+                                        <p> <strong>November</strong></p>
+                                        <p>08.00 am - 06.30 pm</p>
+                                    </div>
+                                </div>
+                                <h4>Job Fair 2021</h4>
+                                <div class="pd-inf-cal-sc">
+                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
+                                    <!-- <p><i class="fas fa-male"></i>200 Seats</p> -->
+                                </div>
+                            </div>
+                            <div class="pd-b-o">
+                                <a href="#">Booking Open</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="pd-cal-card">
+                            <div class="pd-crd-bdy">
+                                <div class="pd-cal-date">
+                                    <div>
+                                        <h3>02</h3>
+                                    </div>
+                                    <div>
+                                        <p> <strong>December</strong></p>
+                                        <p>08.00 am - 04.30 pm</p>
+                                    </div>
+                                </div>
+                                <h4>Graduate Training Programe</h4>
+                                <div class="pd-inf-cal-sc">
+                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
+                                    <p><i class="fas fa-male"></i>200 Seats</p>
+                                </div>
+                            </div>
+                            <div class="pd-b-o">
+                                <!-- <a href="#">Booking Open</a> -->
+                                <p>Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="pd-cal-card">
+                            <div class="pd-crd-bdy">
+                                <div class="pd-cal-date">
+                                    <div>
+                                        <h3>08</h3>
+                                    </div>
+                                    <div>
+                                        <p> <strong>December</strong></p>
+                                        <p>08.00 am - 04.30 pm</p>
+                                    </div>
+                                </div>
+                                <h4>Graduate Training Programe</h4>
+                                <div class="pd-inf-cal-sc">
+                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
+                                    <p><i class="fas fa-male"></i>200 Seats</p>
+                                </div>
+                            </div>
+                            <div class="pd-b-o">
+                                <a href="#">Booking Open</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="pd-cal-card">
+                            <div class="pd-crd-bdy">
+                                <div class="pd-cal-date">
+                                    <div>
+                                        <h3>14</h3>
+                                    </div>
+                                    <div>
+                                        <p> <strong>November</strong></p>
+                                        <p>08.00 am - 04.30 pm</p>
+                                    </div>
+                                </div>
+                                <h4>Graduate Training Programe</h4>
+                                <div class="pd-inf-cal-sc">
+                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
+                                    <p><i class="fas fa-male"></i>200 Seats</p>
+                                </div>
+                            </div>
+                            <div class="pd-b-o">
+                            <p>Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card -->
+                    <div class="col-md-4 col-lg-4">
+                        <div class="pd-cal-card">
+                            <div class="pd-crd-bdy">
+                                <div class="pd-cal-date">
+                                    <div>
+                                        <h3>20</h3>
+                                    </div>
+                                    <div>
+                                        <p> <strong>November</strong></p>
+                                        <p>08.00 am - 04.30 pm</p>
+                                    </div>
+                                </div>
+                                <h4>Online Interview Training Programe</h4>
+                                <div class="pd-inf-cal-sc">
+                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
+                                    <p><i class="fas fa-male"></i>200 Seats</p>
+                                </div>
+                            </div>
+                            <div class="pd-b-o">
+                                <a href="#">Booking Open</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <?php get_footer(); ?>

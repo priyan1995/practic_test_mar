@@ -11,7 +11,8 @@ textdomain:
 */
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #363636;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: rgb(21 20 25 / 90%);
     font-weight: 700;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Source Serif 4', sans-serif;
     margin-bottom: 15px;
 }
 
@@ -42,6 +43,28 @@ p {
 
 .mt-40 {
     margin-top: 40px;
+}
+
+.pd-main-heading{
+    font-weight: 600;
+}
+
+.pd-main-heading span{
+    font-family: 'Source Serif 4', sans-serif;
+    font-weight: 600;
+    color: #ac1026;
+}
+
+.pd-padd{
+    padding: 2.5% 0;
+}
+
+.pd-dbl-p-top{
+    padding-top: 5%;
+}
+
+.pd-dbl-p-bottom{
+    padding-bottom: 5%;
 }
 
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {

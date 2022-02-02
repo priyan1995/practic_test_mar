@@ -64,7 +64,7 @@
     </div>
 
     <div class="col-lg-12 bg-site-green">
-      <p class="credit">Copyright &copy; <?php echo date('Y'); ?> EENG. All rights Reserved. Design & Developed by Bfly Digital.</p>
+      <p class="credit">Copyright &copy; <?php echo date('Y'); ?> EENG. All rights Reserved. Design & Developed by EENG.</p>
     </div>
 
 

@@ -33,7 +33,7 @@ h2 {
 
 p {
     color: rgba(128, 128, 128, 1);
-    line-height: 30px;
+    line-height: 24px;
     transition: 0.5s;
     font-size: 14px;
 }
@@ -185,6 +185,10 @@ p {
     border-left-color: transparent;
 }
 
+.pd-news-card:hover  h4{
+    color: #ac1026 !important;
+}
+
 a:hover{
     text-decoration: none;
 }
@@ -203,6 +207,8 @@ a:hover{
 .pd-sm-news-card img{
     height: 100px;
     object-fit: cover;
+    width: 33%;
+    object-position: left;
 }
 
 .pd-sm-news-card div{
@@ -213,7 +219,96 @@ a:hover{
     display: none !important;
 }
 
+.pd-lg-n-c img{
+    width: 50%;
+    height: 306px;
+}
 
+.pd-lg-n-c h4{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.pd-vn-lin{
+    transition: 0.5s;
+    color: #ac1026;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    margin-top: 25px;
+}
+
+
+.pd-vn-lin i,
+.light-red-link i{
+    color: #ac1026;
+    font-size: 21px;
+    position: relative;
+    bottom: -3px;
+}
+
+.pd-vn-lin:hover,
+.light-red-link:hover{
+    color: #ac1026;
+}
+.pd-lg-n-c div{
+    padding: 15px;
+}
+
+.pd-lg-n-c img{
+    width: 20vw;
+}
+
+.pd-featrd{
+    position: absolute;
+    left: 8px;
+    background: #ac1026;
+    top: 16px;
+    padding: 2px 10px;
+    color: white;
+    font-size: 14px;
+    z-index: 9;
+}
+
+.pd-featrd::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 18px solid #ac1026;
+    border-bottom: 12px solid transparent;
+    top: 0;
+    right: -18px;
+  }
+
+  .pd-featrd::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-left: 10px solid #ac1026;
+    border-bottom: 9px solid transparent;
+    top: 25px;
+    left: -1px;
+    transform: rotate(92deg);
+  }
+
+  .light-red-link{
+    transition: 0.5s;
+    color: #ac1026;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+  }
+
+  .pd-cep-div{
+    border-bottom: 1.5px solid #80808036;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    display: block;
+  }
 
 
 

@@ -121,7 +121,7 @@ get_header();
                                 <img src="<?php echo bloginfo('template_url') ?>/assets/img/cand-cult.jpg">
                                 <div>
                                     <h4>Canadian culture in the workplace public workshop</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit labore placeat laudantium harum qui aliquid adipisci modi deserunt voluptate quasi sit eius, reiciendis porro dolore, sapiente temporibus nam dolori....</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit labore placeat laudantium harum....</p>
                                     <div class="text-right">
                                         <a href="#" class="pd-vn-lin">View More
                                             <i class="fas fa-angle-right"></i>
@@ -325,7 +325,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="pd-b-o">
-                            <p>Coming Soon</p>
+                                <p>Coming Soon</p>
                             </div>
                         </div>
                     </div>
@@ -362,7 +362,21 @@ get_header();
             </div>
 
             <div class="col-lg-4">
+                <div class="pd-evt-img-crd pos-rel" style="background-image: url(<?php echo bloginfo('template_url') ?>/assets/img/eenc-job.jpg);">
+                    <div class="pd-gray-to-bott-overl"></div>
+                    <div>
+                        <h3>EENC Members Only Events</h3>
+                        <p>Please sign in to view EENC members only events</p>
+                        <a href="#">Sign In</a>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-12 pmc">
+                <a href="#" class="light-red-link">Print monthly calander</a>
+            </div>
+
+
         </div>
     </div>
 </section>

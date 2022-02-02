@@ -107,6 +107,7 @@ p {
     color: #d9f5df;
     font-size: 20px;
     max-width: 35%;
+    line-height: 28px;
 }
 
 .pd-ee-jp-sec a {
@@ -115,10 +116,17 @@ p {
     display: inline-block;
     text-align: center;
     padding: 7px;
-    font-weight: 500;
+    font-weight: 600;
     color: #41495ad9;
     border-radius: 7px;
     margin-top: 40px;
+    transition: 0.5s;
+    border: 1px solid #d9f5df;
+}
+
+.pd-ee-jp-sec a:hover{
+    background: transparent;
+    color: #d9f5df;
 }
 
 .pd-ee-jp-sec {
@@ -152,7 +160,7 @@ p {
 .pd-news-card{
     padding: 10px 20px;
     display: flex;
-    min-height: 100px;
+    min-height: 90px;
     align-items: center;
     border: 1.5px solid #80808036;
     margin-bottom: 15px;
@@ -221,7 +229,7 @@ a:hover{
 
 .pd-lg-n-c img{
     width: 50%;
-    height: 306px;
+    height: 256px;
 }
 
 .pd-lg-n-c h4{
@@ -422,6 +430,70 @@ a:hover{
     margin-bottom: 0;
     font-weight: 700;
     font-size: 14px;
+}
+
+.pd-evt-img-crd{
+    height: 94%;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 40px;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pd-gray-to-bott-overl{
+    position: absolute;
+    background: linear-gradient( 180deg , #3e4658, #3e465833);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.pd-evt-img-crd div{
+    z-index: 9;
+}
+
+.pd-evt-img-crd h3{
+    color: white;
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.pd-evt-img-crd p{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 80%;
+}
+
+.pd-evt-img-crd a{
+    background: #d9f5df;
+    min-width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 7px;
+    font-weight: 600;
+    color: #41495ad9;
+    border-radius: 7px;
+    margin-top: 40%;
+    font-size: 14px;
+    transition: 0.5s;
+    border: 1px solid #d9f5df;
+}
+
+.pd-evt-img-crd a:hover{
+    transition: 0.5s;
+    background: transparent;
+    color: #d9f5df;
+}
+
+.pmc a{
+    padding-left: 5px;
+    margin-top: 20px;
 }
 
 /* ===================== responsive  =============== */

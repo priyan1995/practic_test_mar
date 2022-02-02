@@ -229,7 +229,7 @@ a:hover{
 
 .pd-lg-n-c img{
     width: 50%;
-    height: 256px;
+    height: 250px;
 }
 
 .pd-lg-n-c h4{
@@ -494,6 +494,15 @@ a:hover{
 .pmc a{
     padding-left: 5px;
     margin-top: 20px;
+}
+
+.pd-lg-n-c{
+    border: none;
+}
+
+.pd-lg-n-c .pd-l-b{
+    border: 1.5px solid #80808036;
+    border-left: 0;
 }
 
 /* ===================== responsive  =============== */

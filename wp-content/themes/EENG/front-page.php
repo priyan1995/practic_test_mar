@@ -119,7 +119,7 @@ get_header();
                             <div class="pd-news-card pd-sm-news-card pd-lg-n-c">
 
                                 <img src="<?php echo bloginfo('template_url') ?>/assets/img/cand-cult.jpg">
-                                <div>
+                                <div class="pd-l-b">
                                     <h4>Canadian culture in the workplace public workshop</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit labore placeat laudantium harum....</p>
                                     <div class="text-right">

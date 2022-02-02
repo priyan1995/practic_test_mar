@@ -181,7 +181,7 @@ get_header();
                         </a>
                     </div>
 
-                    <div class="text-right pd-cep-div">
+                    <div class="text-right pd-cep-div pd-mt-47">
                         <a href="#" class="light-red-link">View all public job posts <i class="fas fa-angle-right"></i></a>
                     </div>
 
@@ -355,9 +355,6 @@ get_header();
                         </div>
                     </div>
 
-
-
-
                 </div>
             </div>
 
@@ -381,5 +378,40 @@ get_header();
     </div>
 </section>
 
+
+<!-- latest gta jobs section -->
+
+<section class="lt-g-t-job-sec pd-dbl-p-top pd-dbl-p-bot">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ltj-title-sec pd-mb-50">
+                <h2 class="pd-main-heading mb-0">Latest <span>GTA Jobs</span></h2>
+                <a href="#" class="light-red-link">Visit GTA Job Archive <i class="fas fa-angle-right"></i></a>
+            </div>
+
+            <div class="col-12">
+                <div class="pd-client-slide">
+                    <div>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100">
+                    </div>
+                    <div>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100">
+                    </div>
+                    <div>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100">
+                    </div>
+                    <div>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100">
+                    </div>
+                    <div>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php get_footer(); ?>

@@ -505,6 +505,17 @@ a:hover{
     border-left: 0;
 }
 
+.ltj-title-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pd-mt-47{
+    margin-top: 47px;
+}
+
+
 /* ===================== responsive  =============== */
 
 

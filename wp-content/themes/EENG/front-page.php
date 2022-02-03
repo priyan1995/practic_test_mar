@@ -407,6 +407,18 @@ get_header();
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
                     </div>
 
+                    <div>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
+                    </div>
+
+                    <div>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
+                    </div>
+
+                    <div>
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
+                    </div>
+
                 </div>
 
             </div>

@@ -519,6 +519,29 @@ a:hover{
     padding: 20px;
 }
 
+.latest-gta-jobs  .slick-dots li{
+    padding: 0;
+    background: gray;
+    height: 2px;
+    width: 120px;
+    margin: 0;
+}
+
+.latest-gta-jobs .slick-active{
+    background: #ac1026 !important;
+    height: 4px !important;
+    border-radius: 50px;
+    position: relative;
+    top: -1px;
+}
+
+.latest-gta-jobs  .slick-dots li.slick-active button:before,
+.slick-dots li button:before{
+    color: transparent;
+    display: none;
+}
+
+
 /* ===================== responsive  =============== */
 
 

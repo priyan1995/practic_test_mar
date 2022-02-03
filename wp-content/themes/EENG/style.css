@@ -521,13 +521,14 @@ a:hover{
 
 .latest-gta-jobs  .slick-dots li{
     padding: 0;
-    background: gray;
+    background: #adadad;
     height: 2px;
     width: 120px;
     margin: 0;
+    border-radius: 11px;
 }
 
-.latest-gta-jobs .slick-active{
+.latest-gta-jobs li.slick-active{
     background: #ac1026 !important;
     height: 4px !important;
     border-radius: 50px;
@@ -536,12 +537,22 @@ a:hover{
 }
 
 .latest-gta-jobs  .slick-dots li.slick-active button:before,
-.slick-dots li button:before{
+.latest-gta-jobs .slick-dots li button:before{
     color: transparent;
     display: none;
 }
 
+.latest-gta-jobs .slick-dots{
+    bottom: -50px;
+}
 
+.slick-prev:before, .slick-next:before {
+    color: #ac1026;
+    font-size: 41px;
+}
+.slick-prev {
+    left: -42px;
+}
 /* ===================== responsive  =============== */
 
 

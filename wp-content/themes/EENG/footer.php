@@ -1,74 +1,91 @@
-<section class="eps-main-footer EENG-padding" style="background-image: url('<?php echo bloginfo('template_url'); ?>/assets/img/footer.jpg');">
-  <div class="pd-footer-white-gradiant"></div>
-  <div class="dark-bg-footer">
-    <div class="container">
-      <div class="row">
+<section class="eenc-main-footer pd-dbl-p-top pd-dbl-p-bot">
 
-        <div class="col-12">
-          <div class="pd-footer-logo">
-            <a rel="home" href="<?php echo esc_url(home_url('/')); ?>">
-              <?php the_custom_logo(); ?>
-            </a>
-            <p class="text-white"><?php echo get_option('footer_large_text'); ?></p>
-          </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-3">
+        <div class="pd-footer-logo">
+          <a rel="home" href="<?php echo esc_url(home_url('/')); ?>">
+            <?php the_custom_logo(); ?>
+          </a>
+          <p class="text-white"><?php echo get_option('footer_large_text'); ?></p>
         </div>
+      </div>
+
+
+
+
+
+      <div class="col-lg-2">
+        <div class="footer-dark-blue"></div>
+
+        <?php
+        wp_nav_menu(
+          array(
+            'depth'       => 10,
+            'theme_location'  => 'Footer',
+            'container_class' => 'false',
+            'container_id'    => 'navbarNavDropdown',
+            'menu_class'      => 'navbar-nav',
+            'fallback_cb'     => '',
+            'menu_id'         => 'footer-menu',
+            'walker'          => new WP_Bootstrap_Navwalker(),
+          )
+        );
+        ?>
+      </div>
+
+      <div class="col-lg-2">
+        <div class="footer-dark-blue"></div>
+
+        <?php
+        wp_nav_menu(
+          array(
+            'depth'       => 10,
+            'theme_location'  => 'Footer',
+            'container_class' => 'false',
+            'container_id'    => 'navbarNavDropdown',
+            'menu_class'      => 'navbar-nav',
+            'fallback_cb'     => '',
+            'menu_id'         => 'footer-menu',
+            'walker'          => new WP_Bootstrap_Navwalker(),
+          )
+        );
+        ?>
+      </div>
+
+
+      <div class="col-lg-3 pd-social-footer">
+
+        <?php
+        $facebook = get_option('facebook_link');
+        $insta = get_option('insta_url');
+        $twitter = get_option('linkedin_url');
+
+
+        if ($facebook) { ?>
+          <a href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <?php } ?>
+
+        <?php if ($insta) { ?>
+          <a href="<?php echo $insta; ?>" target="_blank"> <i class="fab fa-instagram"></i></a>
+        <?php } ?>
+
+        <?php if ($twitter) { ?>
+          <a href="<?php echo $twitter; ?>" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
+        <?php } ?>
+
+
 
 
       </div>
 
-
-    </div>
-    <div class="col-lg-12">
-      <div class="footer-dark-blue"></div>
-
-      <?php
-      wp_nav_menu(
-        array(
-          'depth'       => 10,
-          'theme_location'  => 'Footer',
-          'container_class' => 'false',
-          'container_id'    => 'navbarNavDropdown',
-          'menu_class'      => 'navbar-nav',
-          'fallback_cb'     => '',
-          'menu_id'         => 'footer-menu',
-          'walker'          => new WP_Bootstrap_Navwalker(),
-        )
-      );
-      ?>
-    </div>
-
-
-    <div class="col-lg-12 pd-social-footer">
-
-      <?php
-      $facebook = get_option('facebook_link');
-      $insta = get_option('insta_url');
-      $twitter = get_option('linkedin_url');
-
-
-      if ($facebook) { ?>
-        <a href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <?php } ?>
-
-      <?php if ($insta) { ?>
-        <a href="<?php echo $insta; ?>" target="_blank"> <i class="fab fa-instagram"></i></a>
-      <?php } ?>
-
-      <?php if ($twitter) { ?>
-        <a href="<?php echo $twitter; ?>" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
-      <?php } ?>
-
-
+      <div class="col-lg-12 bg-site-green">
+        <p class="credit">Copyright &copy; <?php echo date('Y'); ?> EENG. All rights Reserved. Design & Developed by EENG.</p>
+      </div>
 
 
     </div>
-
-    <div class="col-lg-12 bg-site-green">
-      <p class="credit">Copyright &copy; <?php echo date('Y'); ?> EENG. All rights Reserved. Design & Developed by EENG.</p>
-    </div>
-
-
-  </div>
   </div>
 </section>
 

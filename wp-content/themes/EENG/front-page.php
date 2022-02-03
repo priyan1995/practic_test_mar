@@ -390,21 +390,21 @@ get_header();
             </div>
 
             <div class="col-12">
-                <div class="pd-client-slide">
+                <div class="latest-gta-jobs">
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
                     </div>
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
                     </div>
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
                     </div>
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
                     </div>
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
                     </div>
 
                 </div>

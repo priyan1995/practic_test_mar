@@ -1,4 +1,4 @@
-<section class="eenc-main-footer pd-dbl-p-top pd-dbl-p-bot">
+<section class="eenc-main-footer pd-dbl-p-top ">
 
   <div class="container">
     <div class="row">
@@ -96,40 +96,46 @@
 
         <p><?php echo get_option('footer_large_text'); ?></p>
 
-        <?php
-        $facebook = get_option('facebook_link');
-        $insta = get_option('insta_url');
-        $linkedin = get_option('linkedin_url');
-        $twitter = get_option('twitter_url');
+        <div class="pd-footer-newsletter">
+          <?php echo do_shortcode('[newsletter_form type="minimal" ]'); ?>
+        </div>
+
+        <div class="pd-footer-social">
+          <?php
+          $facebook = get_option('facebook_link');
+          $insta = get_option('insta_url');
+          $linkedin = get_option('linkedin_url');
+          $twitter = get_option('twitter_url');
 
 
-        if ($facebook) { ?>
-          <a href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <?php } ?>
+          if ($facebook) { ?>
+            <a href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <?php } ?>
 
-        <?php if ($insta) { ?>
-          <a href="<?php echo $insta; ?>" target="_blank"> <i class="fab fa-instagram"></i></a>
-        <?php } ?>
+          <?php if ($insta) { ?>
+            <a href="<?php echo $insta; ?>" target="_blank"> <i class="fab fa-instagram"></i></a>
+          <?php } ?>
 
-        <?php if ($linkedin) { ?>
-          <a href="<?php echo $linkedin; ?>" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
-        <?php } ?>
+          <?php if ($linkedin) { ?>
+            <a href="<?php echo $linkedin; ?>" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
+          <?php } ?>
 
-        <?php if ($twitter) { ?>
-          <a href="<?php echo $twitter; ?>" target="_blank"> <i class="fab fa-twitter"></i> </a>
-        <?php } ?>
+          <?php if ($twitter) { ?>
+            <a href="<?php echo $twitter; ?>" target="_blank"> <i class="fab fa-twitter"></i> </a>
+          <?php } ?>
 
-
+        </div>
 
 
       </div>
 
-      <div class="col-lg-12 bg-site-green">
-        <p class="credit"> <?php echo date('Y'); ?> All Rights Recieved eenc.ca</p>
-      </div>
+
 
 
     </div>
+  </div>
+  <div class="col-lg-12 pd-bott-crdt text-center">
+    <p class="credit"> <?php echo date('Y'); ?> All Rights Recieved eenc.ca</p>
   </div>
 </section>
 

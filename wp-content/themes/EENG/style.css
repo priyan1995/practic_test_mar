@@ -587,7 +587,7 @@ a:hover{
 .loc-card{
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .loc-card p{
@@ -618,19 +618,75 @@ a:hover{
 .eenc-main-footer h4{
     font-family: 'Inter', sans-serif;
     color: #ffffffde;
+    font-weight: 600;
+    font-size: 20px;
 }
 
+.pd-footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
 
+.pd-footer-social i{
+    font-size: 26px;
+}
 
+.pd-bott-crdt{
+    padding: 4px;
+    margin-top: 50px;
+    border-top: 2px solid #ffffff3d;
+}
 
+.pd-bott-crdt p{    
+    margin: 0;
+    padding: 7px;
+    font-size: 13px;
+}
 
+.tnp-subscription-minimal input.tnp-submit{
+    font-size: 12px !important;
+    height: 100% !important;
+    padding: 11px 0 !important;
+    width: 35% !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    background: #d9f5df !important;
+    font-weight: 600 !important;
+    color: #41495ad9 !important;
+}
 
+.tnp-subscription-minimal input.tnp-email{
+    width: 65% !important;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
 
+.tnp-subscription-minimal form{
+    display: flex !important;
+    align-items: center !important;
+}
 
+.eenc-main-footer .navbar-nav .nav-link{
+    margin-bottom: -2px;
+    transition: 0.5s;
+}
 
+.eenc-main-footer .navbar-nav .nav-link:hover{
+    transition: 0.5s;
+    color: white;
+    transform: translateY(-2px);
+}
 
+.pd-footer-social a{
+    transition: 0.5s;
+}
 
-
+.pd-footer-social a:hover{
+    transition: 0.5s;
+    transform: translateY(-2px);
+}
 
 /* ===================== responsive  =============== */
 

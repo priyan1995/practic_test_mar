@@ -22,9 +22,12 @@ jQuery(document).ready(function () {
   // });
 
   $('.pd-client-slide').slick({
-    centerMode: false,
+    centerMode: true,
     centerPadding: '60px',
     slidesToShow: 3,
+    focusOnSelect: true,
+    infinite: true,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 768,

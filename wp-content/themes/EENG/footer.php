@@ -135,7 +135,7 @@
     </div>
   </div>
   <div class="col-lg-12 pd-bott-crdt text-center">
-    <p class="credit"> <?php echo date('Y'); ?> All Rights Recieved eenc.ca</p>
+    <p class="credit"> <?php echo date('Y'); ?> All Rights Recieved <a href="#">eenc.ca</a></p>
   </div>
 </section>
 

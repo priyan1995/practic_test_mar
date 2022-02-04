@@ -688,6 +688,60 @@ a:hover{
     transform: translateY(-2px);
 }
 
+/* .pd-client-slide  .slick-initialized .slick-slide {
+    display: block;
+    transform: scale(0.8) !important;
+} */
+
+/* .pd-client-slide .slick-slide{
+    padding: 20px;
+}
+
+.pd-client-slide .slick-slide.slick-center{
+    transform: scale(1.2) translateY(13px) !important;
+    z-index: 9999;
+    position: relative;
+    transition: 0.5s;
+    padding: 0;
+} */
+
+/* .pd-client-slide  .slick-slide{
+    opacity: 0 !important;
+} */
+
+.pd-client-slide  .slick-slide.slick-active {
+    z-index: 9;
+    position: relative;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);  
+}
+
+
+.pd-client-slide .slick-center {
+    -webkit-transform: scale(1.5) !important;
+    -moz-transform: scale(1.5) !important;
+    transform: scale(1.5) !important;  
+    transition: 0.5s;  
+    position: relative !important;
+    z-index: 99 !important;
+  }
+
+  .pd-client-slide .slick-list{
+      padding-top: 65px !important;
+      padding-bottom: 65px !important;
+  }
+
+  .pd-client-slide .slick-slide img {
+    display: block;
+    filter: brightness(0.7);
+    border-radius: 6px;
+}
+
+
+
+
+
+
 /* ===================== responsive  =============== */
 
 

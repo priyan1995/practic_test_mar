@@ -45,6 +45,17 @@ get_header();
 
 </section>
 
+<section class="pd-slider-bottom-bar">
+    <div class="container">
+        <div class="pd-icons-bar">
+            <img src="<?php echo bloginfo('template_url') ?>/assets/img/ic-1.jpg" />
+            <img src="<?php echo bloginfo('template_url') ?>/assets/img/ic-2.jpg" />
+            <img src="<?php echo bloginfo('template_url') ?>/assets/img/ic-1.jpg" />
+            <img src="<?php echo bloginfo('template_url') ?>/assets/img/ic-2.jpg" />
+        </div>
+    </div>
+</section>
+
 
 
 

@@ -847,8 +847,41 @@ a:hover{
     color: white;
 }
 
+input:focus{
+    outline: none;
+}
 
+.pd-top-sign-up a{
+    background: #d9f5df;    
+    display: inline-block;
+    text-align: center;
+    padding: 7px 35px;
+    font-weight: 600;
+    color: #41495ad9;
+    border-radius: 7px;
+    transition: 0.5s;
+    border: 1px solid #d9f5df;
+}
 
+.pd-top-sign-up a:hover {
+    background: transparent;
+    color: #d9f5df;
+}
+
+.top-bar{
+    background: #35434e;
+}
+
+.top-bar .tb-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar .logo-wrap img{
+    width: 72%;
+    object-fit: contain;
+}
 
 /* ===================== responsive  =============== */
 

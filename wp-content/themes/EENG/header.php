@@ -49,20 +49,45 @@
 
 <body <?php body_class(); ?>>
 
-  <a href="tel:<?php echo get_option('phone_num');  ?>" class="header-phone"><i class="fas fa-phone"></i></a>
+
 
   <div class="wrapper">
     <div class="header" id="header">
       <div class="header-wrap">
-        <div class="container-fluid pd-menu-bar">
 
-          <div class="row">
-            <div class="col-lg-3  mob-logo">
+        <div class="top-bar">
+          <div class="container">
+            <div class="tb-wrapper">
               <div class="logo-wrap">
                 <a rel="home" href="<?php echo esc_url(home_url('/')); ?>">
                   <?php the_custom_logo(); ?>
                 </a>
               </div>
+
+              <div class="pd-top-inputs">
+                <select>
+                  <option>Job Seekers</option>
+                  <option value="1">Lorem Ipsum</option>
+                  <option value="1">Lorem Ipsum</option>
+                  <option value="1">Lorem Ipsum</option>
+                </select>
+              </div>
+
+              <div class="pd-top-sign-up">
+                <a href="#">Sign In</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="container pd-menu-bar">
+
+          <div class="row">
+            <div class="col-lg-3  mob-logo">
+
             </div>
 
             <div class="col-md-9 col-9 pd-mob-nav-bar pd-links-menu">

@@ -870,6 +870,7 @@ input:focus{
 
 .top-bar{
     background: #35434e;
+    padding: 10px 0;
 }
 
 .top-bar .tb-wrapper{
@@ -879,8 +880,65 @@ input:focus{
 }
 
 .top-bar .logo-wrap img{
-    width: 72%;
+    width: 100%;
     object-fit: contain;
+}
+
+.pd-top-inputs select{
+    background: transparent;
+    color: white;
+    border: none !important;
+    outline: none !important;
+}
+
+.pd-top-inputs select:first-child{
+    position: relative;
+    margin-right: 25px;
+}
+
+.pd-top-inputs{
+    position: relative;
+}
+
+.pd-top-inputs::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: 50%;
+    top: 0;
+    background: #ffffff69;
+}
+
+.pd-menu-bar-red{
+    background: #ac1026;  
+}
+
+.main-menu-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.main-menu-wrap .nav-link{
+    color: white !important;
+    margin: 0 20px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.main-menu-wrap .nav-link:hover{
+    transition: 0.5s;
+    background: #ffffff3b !important; 
+}
+
+.main-menu-wrap .active .nav-link{
+    background: #ffffff3b !important;    
+    transition: 0.5s;
 }
 
 /* ===================== responsive  =============== */

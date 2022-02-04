@@ -5,7 +5,7 @@ Template Name: Home Page Template
 get_header();
 ?>
 
-<img src="<?php echo bloginfo('template_url') ?>/assets/img/banner.jpg" class="w-100">
+<!-- <img src="<?php echo bloginfo('template_url') ?>/assets/img/banner.jpg" class="w-100"> -->
 
 <section class="pd-h-f-o-c-sec pd-padd pd-dbl-p-top pd-dbl-p-bot">
     <div class="container">

@@ -71,6 +71,13 @@
                   <option value="1">Lorem Ipsum</option>
                   <option value="1">Lorem Ipsum</option>
                 </select>
+
+                <select>
+                  <option>Employers</option>
+                  <option value="1">Lorem Ipsum</option>
+                  <option value="1">Lorem Ipsum</option>
+                  <option value="1">Lorem Ipsum</option>
+                </select>
               </div>
 
               <div class="pd-top-sign-up">
@@ -82,46 +89,45 @@
 
 
 
+        <div class="pd-menu-bar-red">
+          <div class="container pd-menu-bar">
 
-        <div class="container pd-menu-bar">
+            <div class="row">
+              <!-- <div class="col-lg-3  mob-logo">
 
-          <div class="row">
-            <div class="col-lg-3  mob-logo">
+              </div> -->
+
+              <div class="col-md-12 col-12 pd-mob-nav-bar pd-links-menu">
+
+                <nav class="navbar navbar-expand-lg navbar-dark " id="pd_fixed_nav">
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+
+                  <div class="main-menu-wrap collapse navbar-collapse" id="navbarSupportedContent">
+                    <?php
+                    wp_nav_menu(
+                      array(
+                        'depth'       => 10,
+                        'theme_location'  => 'primary',
+                        'container_class' => 'false',
+                        'container_id'    => 'navbarNavDropdown',
+                        'menu_class'      => 'navbar-nav',
+                        'fallback_cb'     => '',
+                        'menu_id'         => 'main-menu',
+                        'walker'          => new WP_Bootstrap_Navwalker(),
+                      )
+                    );
+                    ?>
+                  </div>
+                </nav>
+
+              </div>
+              <!-- ==== end menu bar -->
 
             </div>
-
-            <div class="col-md-9 col-9 pd-mob-nav-bar pd-links-menu">
-
-              <nav class="navbar navbar-expand-lg navbar-dark " id="pd_fixed_nav">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-
-                <div class="main-menu-wrap collapse navbar-collapse" id="navbarSupportedContent">
-                  <?php
-                  wp_nav_menu(
-                    array(
-                      'depth'       => 10,
-                      'theme_location'  => 'primary',
-                      'container_class' => 'false',
-                      'container_id'    => 'navbarNavDropdown',
-                      'menu_class'      => 'navbar-nav',
-                      'fallback_cb'     => '',
-                      'menu_id'         => 'main-menu',
-                      'walker'          => new WP_Bootstrap_Navwalker(),
-                    )
-                  );
-                  ?>
-                </div>
-              </nav>
-
-
-
-            </div>
-            <!-- ==== end menu bar -->
-
           </div>
         </div>
       </div>

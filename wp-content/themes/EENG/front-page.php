@@ -18,17 +18,35 @@ get_header();
                     <div>
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100 cs-main-img">
 
+                        <!-- Button trigger modal -->
+                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </a>
+
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
 
                         <div class="pd-cs-cont">
                             <h2>John.K.Paul</h2>
                             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
-                        </div>
+                        </div>                         
+                        
                     </div>
+
+                    
 
 
                     <div>
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100 cs-main-img">
+
+                        <!-- Button trigger modal -->
+                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </a>
+
 
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
 
@@ -44,6 +62,14 @@ get_header();
                     <div>
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100 cs-main-img">
 
+                        <!-- Button trigger modal -->
+                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </a>
+
+
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
 
                         <div class="pd-cs-cont">
@@ -55,6 +81,14 @@ get_header();
 
                     <div>
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100 cs-main-img">
+
+                        <!-- Button trigger modal -->
+                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </a>
+
 
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
 
@@ -69,6 +103,14 @@ get_header();
                     <div>
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100 cs-main-img">
 
+                        <!-- Button trigger modal -->
+                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
+                            <div>
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </a>
+
+
                         <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
 
                         <div class="pd-cs-cont">
@@ -77,8 +119,30 @@ get_header();
                         </div>
 
                     </div>
+
+
+                    
 
                 </div>
+
+
+                 <!-- Modal -->
+                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                      
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/9xwazD5SyVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
 
 
             </div>

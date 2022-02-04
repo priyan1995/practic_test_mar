@@ -784,6 +784,72 @@ a:hover{
     top: 31%;
 }
 
+.modal-backdrop.show{
+    z-index: -1;
+}
+
+.cs-model-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(#ffffff, #ffffff40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #ac1026;
+    margin-top: -35px;
+    margin-left: -35px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.slick-center .cs-model-btn{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.cs-model-btn i{
+    color: #ac1026;
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+.cs-model-btn div{
+    background: white;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-dialog{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal-header{
+    border: none;
+}
+
+.modal-content{
+    background: #4a4a4a;
+    border: 3px solid #a3a3a3;
+    border-radius: 10px;
+}
+
+.close span{
+    color: white;
+}
+
+
+
+
 /* ===================== responsive  =============== */
 
 

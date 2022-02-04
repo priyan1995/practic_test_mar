@@ -355,9 +355,13 @@ a:hover{
 }
 
 .pd-mb-50{
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
+.pd-footer-logo img{
+    width: 100%;
+    object-fit: contain;
+}
 
 
 .pd-cal-card .pd-cal-date{

@@ -70,7 +70,9 @@ function register_nero_primary_menu()
 {
   register_nav_menus(array(
     'primary'  =>   __('Primary Menu', 'EENG'),
-    'Footer'  =>  __('Footer Menu', 'EENG')
+    'Footer'  =>  __('Quick Links', 'EENG'),
+    'Footer_2'  =>  __('Job Seekers', 'EENG'),
+    'Footer_3'  =>  __('Employers', 'EENG')
   ));
 }
 

@@ -17,7 +17,6 @@
 
 
       <div class="col-lg-2">
-        <div class="footer-dark-blue"></div>
 
         <?php
         wp_nav_menu(
@@ -36,13 +35,28 @@
       </div>
 
       <div class="col-lg-2">
-        <div class="footer-dark-blue"></div>
-
         <?php
         wp_nav_menu(
           array(
             'depth'       => 10,
-            'theme_location'  => 'Footer',
+            'theme_location'  => 'Footer_2',
+            'container_class' => 'false',
+            'container_id'    => 'navbarNavDropdown',
+            'menu_class'      => 'navbar-nav',
+            'fallback_cb'     => '',
+            'menu_id'         => 'footer-menu',
+            'walker'          => new WP_Bootstrap_Navwalker(),
+          )
+        );
+        ?>
+      </div>
+
+      <div class="col-lg-2">
+        <?php
+        wp_nav_menu(
+          array(
+            'depth'       => 10,
+            'theme_location'  => 'Footer_3',
             'container_class' => 'false',
             'container_id'    => 'navbarNavDropdown',
             'menu_class'      => 'navbar-nav',

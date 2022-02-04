@@ -1102,8 +1102,15 @@ input:focus{
     align-items: center;
 }
 
+.wpcf7-response-output{
+    position: absolute;
+    bottom: 0;
+}
 
-
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: transparent;
+    color: #ac1026;
+}
 
 /* ===================== responsive  =============== */
 

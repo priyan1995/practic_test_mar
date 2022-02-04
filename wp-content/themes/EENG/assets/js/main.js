@@ -61,5 +61,18 @@ jQuery(document).ready(function () {
   });
 
 
+  $('.pd-main-banner').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    infinite: true,
+    speed: 300,
+    arrows:false,
+    centerPadding: '0px',
+  });
+
+
+
 
 });

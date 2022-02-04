@@ -780,7 +780,7 @@ a:hover{
     color: #454545;
 }
 
-.pd-client-slide .slick-prev, .slick-next{
+.pd-client-slide .slick-prev,.pd-client-slide  .slick-next{
     top: 31%;
 }
 
@@ -940,6 +940,29 @@ input:focus{
     background: #ffffff3b !important;    
     transition: 0.5s;
 }
+
+.lt-g-t-job-sec{
+    margin-bottom: 15px;
+}
+
+.pd-main-slider-inner-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top left;
+}
+
+.pd-main-slider-inner-wrapper{
+    height: 80vh;   
+}
+
+.pd-banner-form-div .pd-main-heading{
+    font-size: 34px;
+}
+
+
+
+
 
 /* ===================== responsive  =============== */
 

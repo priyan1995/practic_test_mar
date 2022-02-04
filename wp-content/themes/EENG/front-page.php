@@ -7,6 +7,34 @@ get_header();
 
 <!-- <img src="<?php echo bloginfo('template_url') ?>/assets/img/banner.jpg" class="w-100"> -->
 
+<section class="pd-slider-sec pos-rel">
+    <div class="pd-main-banner">
+
+        <div>
+            <div class="pd-main-slider-inner-wrapper">
+                <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100">
+            </div>
+        </div>
+
+        <div>
+            <div class="pd-main-slider-inner-wrapper">
+                <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pd-banner-form-div">
+        <h2 class="pd-main-heading">I Need <span>Information</span> on</h2>
+    </div>
+
+
+</section>
+
+
+
+
+
 <section class="pd-h-f-o-c-sec pd-padd pd-dbl-p-top pd-dbl-p-bot">
     <div class="container">
         <div class="row">
@@ -30,11 +58,11 @@ get_header();
                         <div class="pd-cs-cont">
                             <h2>John.K.Paul</h2>
                             <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
-                        </div>                         
-                        
+                        </div>
+
                     </div>
 
-                    
+
 
 
                     <div>
@@ -121,28 +149,28 @@ get_header();
                     </div>
 
 
-                    
+
 
                 </div>
 
 
-                 <!-- Modal -->
-                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                      
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/9xwazD5SyVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
-                                   
-                                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
+                            <div class="modal-body">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/9xwazD5SyVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
                         </div>
+                    </div>
+                </div>
 
 
             </div>

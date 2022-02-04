@@ -14,20 +14,68 @@ get_header();
                 <h2 class="pd-main-heading text-center">Hear From <span>Our Clients</span></h2>
 
                 <div class="pd-client-slide">
+
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100 cs-main-img">
+
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
+
+                        <div class="pd-cs-cont">
+                            <h2>John.K.Paul</h2>
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
+                        </div>
                     </div>
+
+
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100 cs-main-img">
+
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
+
+                        <div class="pd-cs-cont">
+                            <h2>John.K.Paul</h2>
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
+                        </div>
+
+
                     </div>
+
+
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100 cs-main-img">
+
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
+
+                        <div class="pd-cs-cont">
+                            <h2>John.K.Paul</h2>
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
+                        </div>
                     </div>
+
+
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100 cs-main-img">
+
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
+
+                        <div class="pd-cs-cont">
+                            <h2>John.K.Paul</h2>
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
+                        </div>
+
                     </div>
+
+
                     <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100">
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100 cs-main-img">
+
+                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
+
+                        <div class="pd-cs-cont">
+                            <h2>John.K.Paul</h2>
+                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
+                        </div>
+
                     </div>
 
                 </div>

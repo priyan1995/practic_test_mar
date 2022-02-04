@@ -361,6 +361,8 @@ a:hover{
 .pd-footer-logo img{
     width: 100%;
     object-fit: contain;
+    margin-bottom: 20px;
+    margin-top: -6px;
 }
 
 
@@ -581,6 +583,55 @@ a:hover{
 .eenc-main-footer{
     background: #a80f25;
 }
+
+.loc-card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.loc-card p{
+    margin-bottom: 0;
+}
+
+.loc-card i{
+    margin-right: 8px;
+}
+
+.eenc-main-footer p{
+    color: #ffffffde;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.eenc-main-footer a{
+    color: #ffffffde;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+.eenc-main-footer i{
+    color: white;   
+}
+
+.eenc-main-footer h4{
+    font-family: 'Inter', sans-serif;
+    color: #ffffffde;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===================== responsive  =============== */
 
 

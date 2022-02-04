@@ -240,143 +240,73 @@ function theme_options_setting()
   );
 
   add_settings_field(
-
     "linkedin_url",
-
     "Linkedin URL",
-
     "display_linkedin",
-
     "theme-options",
-
     "section"
+  );
 
-
-
+  add_settings_field(
+    "twitter_url",
+    "Twitter URL",
+    "display_twitter",
+    "theme-options",
+    "section"
   );
 
 
 
-  add_settings_field(
 
+  add_settings_field(
     "phone_num",
-
     "Phone Number",
-
     "display_phone",
-
     "theme-options",
-
     "section"
-
-
-
   );
 
 
 
   add_settings_field(
-
     "email_1",
-
     "Email 1",
-
     "display_email_add_1",
-
     "theme-options",
-
     "section"
-
-
-
   );
 
 
 
-  add_settings_field(
-
-    "email_2",
-
-    "Email 2",
-
-    "display_email_add_2",
-
-    "theme-options",
-
-    "section"
-
-
-
-  );
-
 
   add_settings_field(
-
     "address",
-
     "Address",
-
     "display_address",
-
     "theme-options",
-
     "section"
-
   );
-
-
-  // add_settings_field(
-
-  //     "footer_small_text",
-
-  //     "Footer Small Text",
-
-  //     "display_footer_small_text",
-
-  //     "theme-options",
-
-  //     "section"
-
-  //   );
+  
 
   add_settings_field(
-
     "footer_large_text",
-
     "Footer Large Text",
-
     "display_footer_large_text",
-
     "theme-options",
-
     "section"
-
   );
-
-
-
-
-
-
 
 
   register_setting("section", "phone_num");
-
   register_setting("section", "email_1");
-
   register_setting("section", "email_2");
-
   register_setting("section", "address");
-
-  //  register_setting("section", "footer_small_text");
-
   register_setting("section", "footer_large_text");
-
   register_setting("section", "facebook_link");
-
   register_setting("section", "insta_url");
-
   register_setting("section", "linkedin_url");
+  register_setting("section", "twitter_url");
+
 }
 
 
@@ -413,6 +343,16 @@ function display_linkedin()
 { ?>
 
   <input type="text" name="linkedin_url" value="<?php echo get_option('linkedin_url'); ?>" id="linkedin_url" />
+
+<?php
+
+}
+
+function display_twitter()
+
+{ ?>
+
+  <input type="text" name="twitter_url" value="<?php echo get_option('twitter_url'); ?>" id="twitter_url" />
 
 <?php
 
@@ -467,28 +407,14 @@ function display_address()
 
 }
 
-/*
-function display_footer_small_text()
 
-{ ?>
-
-  <input type="text" name="footer_small_text" value="<?php echo get_option('footer_small_text'); ?>" id="footer_small_text" />
-
-<?php
-
-
-}
-
-*/
 
 
 function display_footer_large_text()
 
 { ?>
 
-  <!-- <input type="text" name="footer_large_text" value="<?php // echo get_option('footer_large_text'); 
-                                                          ?>" id="footer_large_text" /> -->
-
+ 
   <textarea id="footer_large_text" name="footer_large_text"><?php echo get_option('footer_large_text'); ?></textarea>
 
 <?php

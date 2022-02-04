@@ -8,7 +8,24 @@
           <a rel="home" href="<?php echo esc_url(home_url('/')); ?>">
             <?php the_custom_logo(); ?>
           </a>
-          <p class="text-white"><?php echo get_option('footer_large_text'); ?></p>
+
+          <div class="loc-card">
+            <i class="fas fa-phone-alt"></i>
+            <p><?php echo get_option('address'); ?></p>
+          </div>
+
+          <div class="loc-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="tel:<?php echo get_option('phone_num'); ?>"><?php echo get_option('phone_num'); ?></a>
+          </div>
+
+
+          <div class="loc-card">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:<?php echo get_option('email_1'); ?>"><?php echo get_option('email_1'); ?></a>
+          </div>
+
+
         </div>
       </div>
 
@@ -17,6 +34,8 @@
 
 
       <div class="col-lg-2">
+
+        <h4>Quick Links</h4>
 
         <?php
         wp_nav_menu(
@@ -35,6 +54,7 @@
       </div>
 
       <div class="col-lg-2">
+        <h4>Job Seekers</h4>
         <?php
         wp_nav_menu(
           array(
@@ -52,6 +72,7 @@
       </div>
 
       <div class="col-lg-2">
+        <h4>Employers</h4>
         <?php
         wp_nav_menu(
           array(
@@ -71,10 +92,15 @@
 
       <div class="col-lg-3 pd-social-footer">
 
+        <h4>Join Our Newsletter</h4>
+
+        <p><?php echo get_option('footer_large_text'); ?></p>
+
         <?php
         $facebook = get_option('facebook_link');
         $insta = get_option('insta_url');
-        $twitter = get_option('linkedin_url');
+        $linkedin = get_option('linkedin_url');
+        $twitter = get_option('twitter_url');
 
 
         if ($facebook) { ?>
@@ -85,8 +111,12 @@
           <a href="<?php echo $insta; ?>" target="_blank"> <i class="fab fa-instagram"></i></a>
         <?php } ?>
 
+        <?php if ($linkedin) { ?>
+          <a href="<?php echo $linkedin; ?>" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
+        <?php } ?>
+
         <?php if ($twitter) { ?>
-          <a href="<?php echo $twitter; ?>" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
+          <a href="<?php echo $twitter; ?>" target="_blank"> <i class="fab fa-twitter"></i> </a>
         <?php } ?>
 
 
@@ -95,7 +125,7 @@
       </div>
 
       <div class="col-lg-12 bg-site-green">
-        <p class="credit">Copyright &copy; <?php echo date('Y'); ?> EENG. All rights Reserved. Design & Developed by EENG.</p>
+        <p class="credit"> <?php echo date('Y'); ?> All Rights Recieved eenc.ca</p>
       </div>
 
 

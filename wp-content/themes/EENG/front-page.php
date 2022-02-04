@@ -25,9 +25,23 @@ get_header();
     </div>
 
     <div class="pd-banner-form-div">
-        <h2 class="pd-main-heading">I Need <span>Information</span> on</h2>
+       
+        <div>
+            <h2 class="pd-main-heading">I Need <span>Information</span> on</h2>
+
+            <div class="pd-banner-form">
+                <?php echo do_shortcode('[contact-form-7 id="37" title="Banner form"]'); ?>
+            </div>
+        </div>
+        
     </div>
 
+    
+    
+    <div class="pd-bn-shade-3"></div>
+    <div class="pd-bn-shade-2"></div>
+    <div class="pd-bn-shade-1"></div>
+ 
 
 </section>
 

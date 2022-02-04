@@ -1102,6 +1102,10 @@ input:focus{
     align-items: center;
 }
 
+.pd-slider-bottom-bar img{
+    width: 50px;
+}
+
 .wpcf7-response-output{
     position: absolute;
     bottom: 0;

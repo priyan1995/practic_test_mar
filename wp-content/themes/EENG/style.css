@@ -318,7 +318,7 @@ a:hover{
   .pd-cep-div{
     border-bottom: 1.5px solid #80808036;
     padding-bottom: 10px;
-    margin-top: 40px;
+    margin-top: 66px;
     display: block;
   }
 
@@ -1493,6 +1493,18 @@ input:focus{
     }
     .tnp-subscription-minimal form{
         justify-content: center;
+    }
+    .wpcf7-not-valid-tip{
+        text-align: left;
+    }
+    .wpcf7-response-output{
+        text-align: left;
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .pd-cep-div{
+        margin-top: 30px;
     }
 }
 

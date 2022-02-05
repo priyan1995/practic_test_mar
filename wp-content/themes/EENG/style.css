@@ -10,6 +10,10 @@ textdomain:
 
 */
 
+html{
+    overflow-x: hidden;
+}
+
 * {
     font-family: 'Inter', sans-serif;
     color: #363636;
@@ -1386,7 +1390,7 @@ input:focus{
     }
 
     .pd-main-heading{
-        margin-bottom: 20px !important;
+        margin-bottom: 30px !important;
     }
     .pd-ee-jp-sec p{
         max-width: 100% !important;
@@ -1473,8 +1477,37 @@ input:focus{
         left: 36px;
         top: 30px;
     }
+    .pd-sm-news-card img {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+    }
+    .pd-evt-img-crd p{
+        max-width: 100%;
+    }
+    .pd-banner-form-div{
+        border-radius: 0 !important;
+        z-index: unset;
+    }
+    .pd-client-slide .slick-slide.slick-active{
+        transform: scale(1);
+    }
+    .tnp-subscription-minimal form{
+        justify-content: center;
+    }
 }
 
+
+@media (max-width:767px){
+    .pd-cal-card h4{
+        text-align: left;
+    }
+    .pd-cal-card .pd-cal-date p{
+        text-align: left;
+    }
+    .pd-cal-card::before{
+        left: 0;
+    }
+}
 
 @media (min-width:767px) and (max-width:992px) {
 
@@ -1504,5 +1537,35 @@ input:focus{
 @media (min-width:992px) and (max-width:1200px) {
     .header-phone-menu {
         display: none;
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .header-phone-menu {
+        display: none;
+    }
+    .pd-cal-card h4{
+        font-size: 18px;
+    }
+    .pd-cal-card .pd-cal-date p,
+    .pd-inf-cal-sc p{
+        font-size: 11px;
+    }
+    .slick-prev {
+        left: 0;
+        z-index: 99;
+    }
+    .slick-next {
+        right: 20px;
+        z-index: 99;
+    }
+    .pd-lg-n-c h4{
+        font-size: 20px;
+    }
+    .pd-news-card a{
+        height: 100%;
+    }
+    .pd-banner-form-div{
+        border-top-left-radius: 38%;
     }
 }

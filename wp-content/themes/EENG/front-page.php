@@ -325,32 +325,59 @@ get_header();
             <div class="col-lg-8">
                 <div class="row">
 
-                    <!-- card -->
-                    <div class="col-md-4 col-lg-4">
-                        <div class="pd-cal-card">
-                            <div class="pd-crd-bdy">
-                                <div class="pd-cal-date">
-                                    <div>
-                                        <h3>19</h3>
-                                    </div>
-                                    <div>
-                                        <p> <strong>November</strong></p>
-                                        <p>08.00 am - 04.30 pm</p>
-                                    </div>
-                                </div>
-                                <h4>Graduate Training Programe</h4>
-                                <div class="pd-inf-cal-sc">
-                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
-                                    <p><i class="fas fa-male"></i>200 Seats</p>
-                                </div>
-                            </div>
-                            <div class="pd-b-o">
-                                <a href="#">Booking Open</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- card -->
+                    <?php
+
+                    $event  = new WP_Query(array("post_type" => "events", 'order' => 'DESC', "posts_per_page" => "6"));
+                    if ($testimonials->have_posts()) :
+                        while ($event->have_posts()) :
+                            $event->the_post();
+
+                            $openStatus = get_field('booking_open_status_evt');
+                            $seats_counter = get_field('seats_counter_evt');
+
+                    ?>
+
+                            <!-- card -->
+                            <div class="col-md-4 col-lg-4">
+                                <div class="pd-cal-card">
+                                    <div class="pd-crd-bdy">
+                                        <div class="pd-cal-date">
+                                            <div>
+                                                <h3><?php the_field('date_evt') ?></h3>
+                                            </div>
+                                            <div>
+                                                <p> <strong><?php the_field('month_evt'); ?></strong></p>
+                                                <p><?php the_field('time_start_evt'); ?> - <?php the_field('time_end_evt'); ?></p>
+                                            </div>
+                                        </div>
+                                        <h4><?php the_title(); ?></h4>
+                                        <div class="pd-inf-cal-sc">
+                                            <p><i class="fas fa-map-marker-alt"></i> <?php the_field('place_evt'); ?></p>
+                                            <?php if ($seats_counter) { ?>
+                                                <p><i class="fas fa-male"></i><?php the_field('seats_counter_evt'); ?> Seats</p>
+                                            <?php } ?>
+
+                                        </div>
+                                    </div>
+                                    <div class="pd-b-o">
+                                        <?php if ($openStatus) { ?>
+                                            <a href="#">Booking Open</a>
+                                        <?php } else { ?>
+                                            <p>Coming Soon</p>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <?php
+                        endwhile;
+                    endif;
+                    wp_reset_query();
+
+                    ?>
+
+                    <?php   /*     <!-- card -->
                     <div class="col-md-4 col-lg-4">
                         <div class="pd-cal-card">
                             <div class="pd-crd-bdy">
@@ -475,6 +502,8 @@ get_header();
                             </div>
                         </div>
                     </div>
+
+                    */ ?>
 
                 </div>
             </div>

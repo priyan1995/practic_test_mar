@@ -5,7 +5,6 @@ Template Name: Home Page Template
 get_header();
 ?>
 
-<!-- <img src="<?php echo bloginfo('template_url') ?>/assets/img/banner.jpg" class="w-100"> -->
 
 <section class="pd-slider-sec pos-rel">
     <div class="pd-main-banner">
@@ -27,7 +26,7 @@ get_header();
     <div class="pd-banner-form-div">
        
         <div>
-            <h2 class="pd-main-heading">I Need <span>Information</span> on</h2>
+            <h2 class="pd-main-heading"><?php the_field('bannerr_form_title'); ?><span><?php the_field('bannerr_form_title_copy'); ?></span> </h2>
 
             <div class="pd-banner-form">
                 <?php echo do_shortcode('[contact-form-7 id="37" title="Banner form"]'); ?>
@@ -48,10 +47,10 @@ get_header();
 <section class="pd-slider-bottom-bar">
     <div class="container">
         <div class="pd-icons-bar">
-            <img src="<?php echo bloginfo('template_url') ?>/assets/img/ic-1.jpg" />
-            <img src="<?php echo bloginfo('template_url') ?>/assets/img/ic-2.jpg" />
-            <img src="<?php echo bloginfo('template_url') ?>/assets/img/ic-1.jpg" />
-            <img src="<?php echo bloginfo('template_url') ?>/assets/img/ic-2.jpg" />
+            <img src="<?php the_field('icon_1_banner'); ?>" />
+            <img src="<?php the_field('icon_2_banner'); ?>" />
+            <img src="<?php the_field('icon_3_banner'); ?>" />
+            <img src="<?php the_field('icon_4_banner'); ?>" />
         </div>
     </div>
 </section>
@@ -64,7 +63,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="pd-main-heading text-center">Hear From <span>Our Clients</span></h2>
+                <h2 class="pd-main-heading text-center"><?php the_field('title_hfoc'); ?> <span><?php the_field('title_hfoc_copy'); ?></span></h2>
 
                 <div class="pd-client-slide">
 
@@ -204,14 +203,14 @@ get_header();
 </section>
 
 <!-- EENC Job post section -->
-<section class="pd-ee-jp-sec pos-rel pd-padd" style="background-image: url(<?php echo bloginfo('template_url') ?>/assets/img/eenc-job.jpg);">
+<section class="pd-ee-jp-sec pos-rel pd-padd" style="background-image: url(<?php the_field('back_img_eenc_job'); ?>);">
     <div class="pd-bg-blue-grad"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-left">
-                <h2><span>EENC</span> Job Posts</h2>
-                <p>Please sign in to view all job posts for EENC Members.</p>
-                <a href="#">Sign in</a>
+                <h2><span><?php the_field('title_eenc_job'); ?></span> <?php the_field('title_eenc_job_copy'); ?></h2>
+                <p><?php the_field('description_eenc_job'); ?></p>
+                <a href="<?php the_field('sign_link_eenc_job'); ?>">Sign in</a>
             </div>
         </div>
     </div>
@@ -223,7 +222,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-lg-5">
-                <h3>Latest Public Job Posts</h3>
+                <h3><?php the_field('title_ltj_job'); ?></h3>
 
                 <a href="#">
                     <div class="pd-news-card">
@@ -276,7 +275,7 @@ get_header();
 
             </div>
             <div class="col-lg-7">
-                <h3>Latest Common Job News</h3>
+                <h3><?php the_field('title_ltj2_job'); ?></h3>
                 <div class="row">
                     <div class="col-lg-12">
                         <a href="#">
@@ -364,7 +363,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="pd-main-heading pd-mb-50">EENC <span>Upcoming Events</span></h2>
+                <h2 class="pd-main-heading pd-mb-50"><?php the_field('title_upc_events'); ?> <span><?php the_field('title_upc_events_copy'); ?></span></h2>
             </div>
             <div class="col-lg-8">
                 <div class="row">
@@ -524,12 +523,12 @@ get_header();
             </div>
 
             <div class="col-lg-4">
-                <div class="pd-evt-img-crd pos-rel" style="background-image: url(<?php echo bloginfo('template_url') ?>/assets/img/eenc-job.jpg);">
+                <div class="pd-evt-img-crd pos-rel" style="background-image: url(<?php the_field('sign_in_moe_back_img'); ?>);">
                     <div class="pd-gray-to-bott-overl"></div>
                     <div>
-                        <h3>EENC Members Only Events</h3>
-                        <p>Please sign in to view EENC members only events</p>
-                        <a href="#">Sign In</a>
+                        <h3><?php the_field('title_moe'); ?></h3>
+                        <p><?php the_field('desc_moe'); ?></p>
+                        <a href="<?php the_field('sign_in_moe'); ?>">Sign In</a>
                     </div>
                 </div>
             </div>
@@ -550,7 +549,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-12 ltj-title-sec pd-mb-50">
-                <h2 class="pd-main-heading mb-0">Latest <span>GTA Jobs</span></h2>
+                <h2 class="pd-main-heading mb-0"><?php the_field('title_ltgta'); ?> <span><?php the_field('title_ltgta_copy'); ?></span></h2>
                 <a href="#" class="light-red-link">Visit GTA Job Archive <i class="fas fa-angle-right"></i></a>
             </div>
 

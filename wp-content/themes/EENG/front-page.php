@@ -9,22 +9,28 @@ get_header();
 <section class="pd-slider-sec pos-rel">
     <div class="pd-main-banner">
 
-        <div>
-            <div class="pd-main-slider-inner-wrapper">
-                <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100">
-            </div>
-        </div>
+        <?php
+        $sliders  = new WP_Query(array("post_type" => "banner", 'order' => 'DESC', "posts_per_page" => "20"));
+        if ($sliders->have_posts()) :
+            while ($sliders->have_posts()) :
+                $sliders->the_post();
+        ?>
+                <div>
+                    <div class="pd-main-slider-inner-wrapper">
+                        <img src="<?php the_field('banner_image'); ?>" class="w-100">
+                    </div>
+                </div>
 
-        <div>
-            <div class="pd-main-slider-inner-wrapper">
-                <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100">
-            </div>
-        </div>
+        <?php
+            endwhile;
+        endif;
+        wp_reset_query();
+        ?>
 
     </div>
 
     <div class="pd-banner-form-div">
-       
+
         <div>
             <h2 class="pd-main-heading"><?php the_field('bannerr_form_title'); ?><span><?php the_field('bannerr_form_title_copy'); ?></span> </h2>
 
@@ -32,15 +38,15 @@ get_header();
                 <?php echo do_shortcode('[contact-form-7 id="37" title="Banner form"]'); ?>
             </div>
         </div>
-        
+
     </div>
 
-    
-    
+
+
     <div class="pd-bn-shade-3"></div>
     <div class="pd-bn-shade-2"></div>
     <div class="pd-bn-shade-1"></div>
- 
+
 
 </section>
 
@@ -50,7 +56,7 @@ get_header();
             <img src="<?php the_field('icon_1_banner'); ?>" />
             <img src="<?php the_field('icon_2_banner'); ?>" />
             <img src="<?php the_field('icon_3_banner'); ?>" />
-            <img src="<?php the_field('icon_4_banner'); ?>" />
+            <img src="<?php the_field('icon_4_bannerr'); ?>" />
         </div>
     </div>
 </section>
@@ -67,134 +73,85 @@ get_header();
 
                 <div class="pd-client-slide">
 
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="w-100 cs-main-img">
+                    <?php
+                    $x == 0;
+                    $testimonials  = new WP_Query(array("post_type" => "testimonials", 'order' => 'DESC', "posts_per_page" => "-1"));
+                    if ($testimonials->have_posts()) :
+                        while ($testimonials->have_posts()) :
+                            $testimonials->the_post();
 
-                        <!-- Button trigger modal -->
-                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
+                            $video_link = get_field('video_url_testi');
+                            $x++;
+                    ?>
+
                             <div>
-                                <i class="fas fa-play"></i>
+                                <img src="<?php the_field('image_tetsi');  ?>" class="w-100 cs-main-img">
+
+                                <?php if ($video_link) { ?>
+                                    <!-- Button trigger modal -->
+                                    <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal<?php echo $x; ?>">
+                                        <div>
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </a>
+
+                                <?php } ?>
+
+                                <img src="<?php the_field('thumbnail_image_testi'); ?>" class="cs-small-img">
+
+                                <div class="pd-cs-cont">
+                                    <h2><?php the_title(); ?></h2>
+                                    <div><?php the_content(); ?></div>
+                                </div>
+
                             </div>
-                        </a>
 
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
+                    <?php
+                        endwhile;
+                    endif;
+                    wp_reset_query();
 
-                        <div class="pd-cs-cont">
-                            <h2>John.K.Paul</h2>
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
-                        </div>
-
-                    </div>
-
-
-
-
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100 cs-main-img">
-
-                        <!-- Button trigger modal -->
-                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
-                            <div>
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </a>
-
-
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
-
-                        <div class="pd-cs-cont">
-                            <h2>John.K.Paul</h2>
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
-                        </div>
-
-
-                    </div>
-
-
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100 cs-main-img">
-
-                        <!-- Button trigger modal -->
-                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
-                            <div>
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </a>
-
-
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
-
-                        <div class="pd-cs-cont">
-                            <h2>John.K.Paul</h2>
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-2.jpg" class="w-100 cs-main-img">
-
-                        <!-- Button trigger modal -->
-                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
-                            <div>
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </a>
-
-
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
-
-                        <div class="pd-cs-cont">
-                            <h2>John.K.Paul</h2>
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
-                        </div>
-
-                    </div>
-
-
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-3.jpg" class="w-100 cs-main-img">
-
-                        <!-- Button trigger modal -->
-                        <a type="button" class="cs-model-btn" data-toggle="modal" data-target="#exampleModal">
-                            <div>
-                                <i class="fas fa-play"></i>
-                            </div>
-                        </a>
-
-
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/client-1.jpg" class="cs-small-img">
-
-                        <div class="pd-cs-cont">
-                            <h2>John.K.Paul</h2>
-                            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio.."</p>
-                        </div>
-
-                    </div>
-
-
-
+                    ?>
 
                 </div>
 
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
+                <?php
+                $y == 0;
+                $testimonials  = new WP_Query(array("post_type" => "testimonials", 'order' => 'DESC', "posts_per_page" => "-1"));
+                if ($testimonials->have_posts()) :
+                    while ($testimonials->have_posts()) :
+                        $testimonials->the_post();
 
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/9xwazD5SyVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+                        $video_link = get_field('video_url_testi');
+                        $y++;
+                ?>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal<?php echo $y; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
 
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe width="100%" height="315" src="<?php the_field('video_url_testi'); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+
+
+
+                <?php
+                    endwhile;
+                endif;
+                wp_reset_query();
+
+                ?>
 
 
             </div>

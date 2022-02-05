@@ -229,7 +229,7 @@ a:hover{
 
 .pd-lg-n-c img{
     width: 50%;
-    height: 250px;
+    height: 100%;
 }
 
 .pd-lg-n-c h4{
@@ -243,7 +243,7 @@ a:hover{
     font-size: 15px;
     font-weight: 700;
     display: block;
-    margin-top: 25px;
+    margin-top: 0px;
 }
 
 
@@ -1122,6 +1122,32 @@ input:focus{
     border-color: transparent;
     color: #ac1026;
 }
+
+.pad-0{
+    padding: 0 !important;
+}
+
+.pd-lg-n-c{
+    overflow: hidden;
+    height: 277px;
+}
+
+.pd-lg-n-c .pd-l-b{
+    height: 100%;
+    padding: 24px;
+}
+
+.pd-sm-news-card img{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; 
+}
+
+
+
+
+
+
+
 
 /* ===================== responsive  =============== */
 

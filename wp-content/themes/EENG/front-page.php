@@ -181,50 +181,32 @@ get_header();
             <div class="col-lg-5">
                 <h3><?php the_field('title_ltj_job'); ?></h3>
 
-                <a href="#">
-                    <div class="pd-news-card">
-                        <div>
-                            <h4>Assistant Stopkeeper</h4>
-                            <p>JSW Apparels (Pvt) Ltd</p>
-                        </div>
-                    </div>
-                </a>
 
-                <a href="#">
-                    <div class="pd-news-card">
-                        <div>
-                            <h4>Assistant Stopkeeper</h4>
-                            <p>JSW Apparels (Pvt) Ltd</p>
-                        </div>
-                    </div>
-                </a>
+                <?php
+                $latest_jobs  = new WP_Query(array("post_type" => "job_news", 'order' => 'DESC', "posts_per_page" => "5"));
+                if ($latest_jobs->have_posts()) :
+                    while ($latest_jobs->have_posts()) :
+                        $latest_jobs->the_post();
 
-                <a href="#">
-                    <div class="pd-news-card">
-                        <div>
-                            <h4>Senior Software Engineer (.Net) - Remote</h4>
-                            <p>Champ IT Solutions</p>
-                        </div>
-                    </div>
-                </a>
+                ?>
 
-                <a href="#">
-                    <div class="pd-news-card">
-                        <div>
-                            <h4>Excecutive - Customer Services</h4>
-                            <p>Genesis Software</p>
-                        </div>
-                    </div>
-                </a>
+                        <a href="#">
+                            <div class="pd-news-card">
+                                <div>
+                                    <h4><?php the_title(); ?></h4>
+                                    <p><?php the_field('short_description_news'); ?></p>
+                                </div>
+                            </div>
+                        </a>
 
-                <a href="#">
-                    <div class="pd-news-card">
-                        <div>
-                            <h4>Senior Brand Excecutive</h4>
-                            <p>Wallspan (Pvt) Ltd</p>
-                        </div>
-                    </div>
-                </a>
+
+                <?php
+                    endwhile;
+                endif;
+                wp_reset_query();
+
+                ?>
+
                 <div class="text-right pd-cep-div">
                     <a href="#" class="light-red-link">View all public job posts <i class="fas fa-angle-right"></i></a>
                 </div>
@@ -235,77 +217,76 @@ get_header();
                 <h3><?php the_field('title_ltj2_job'); ?></h3>
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="#">
-                            <span class="pd-featrd">Featured </span>
-                            <div class="pd-news-card pd-sm-news-card pd-lg-n-c">
 
-                                <img src="<?php echo bloginfo('template_url') ?>/assets/img/cand-cult.jpg">
-                                <div class="pd-l-b">
-                                    <h4>Canadian culture in the workplace public workshop</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio velit labore placeat laudantium harum....</p>
-                                    <div class="text-right">
-                                        <a href="#" class="pd-vn-lin">View More
-                                            <i class="fas fa-angle-right"></i>
-                                        </a>
+                        <?php
+                        $latest_jobs_featurd  = new WP_Query(array("post_type" => "job_news", "taxonomy" => "featured_news", "featured_news" => "feat", 'order' => 'RAND', "posts_per_page" => "1"));
+                        if ($latest_jobs_featurd->have_posts()) :
+                            while ($latest_jobs_featurd->have_posts()) :
+                                $latest_jobs_featurd->the_post();
+                                $content = get_the_content();
+
+                        ?>
+
+                                <a href="#">
+                                    <span class="pd-featrd">Featured </span>
+                                    <div class="pd-news-card pd-sm-news-card pd-lg-n-c">
+
+                                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/cand-cult.jpg">
+                                        <div class="pd-l-b">
+                                            <h4><?php the_title(); ?></h4>
+
+                                            <div class="pad-0">
+                                                <?php custom_echo($content, 109); ?>
+                                            </div>
+
+                                            <div class="text-right">
+                                                <a href="#" class="pd-vn-lin">View More
+                                                    <i class="fas fa-angle-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                                </a>
 
-                    <div class="col-lg-6">
-                        <a href="#">
-                            <div class="pd-news-card pd-sm-news-card">
-                                <img src="<?php echo bloginfo('template_url') ?>/assets/img/dumJb.png">
-                                <div>
-                                    <h4>Face online interview</h4>
-                                    <p>Genesis Software</p>
-                                </div>
-                            </div>
-                        </a>
+                        <?php
+                            endwhile;
+                        endif;
+                        wp_reset_query();
+
+                        ?>
                     </div>
 
 
-                    <div class="col-lg-6">
-                        <a href="#">
-                            <div class="pd-news-card pd-sm-news-card">
-                                <img src="<?php echo bloginfo('template_url') ?>/assets/img/dumJb.png">
-                                <div>
-                                    <h4>Face online interview</h4>
-                                    <p>Genesis Software</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <?php
+                    $latest_jobs_lc  = new WP_Query(array("post_type" => "job_news", "taxonomy" => "featured_news", "featured_news" => "latest_common", 'order' => 'RAND', "posts_per_page" => "4"));
+                    if ($latest_jobs_lc->have_posts()) :
+                        while ($latest_jobs_lc->have_posts()) :
+                            $latest_jobs_lc->the_post();
+                            $content = get_the_content();
+                    ?>
 
-                    <div class="col-lg-6">
-                        <a href="#">
-                            <div class="pd-news-card pd-sm-news-card">
-                                <img src="<?php echo bloginfo('template_url') ?>/assets/img/dumJb.png">
-                                <div>
-                                    <h4>Face online interview</h4>
-                                    <p>Genesis Software</p>
-                                </div>
+                            <div class="col-lg-6">
+                                <a href="#">
+                                    <div class="pd-news-card pd-sm-news-card">
+                                        <img src="<?php the_field('image_news'); ?>">
+                                        <div>
+                                            <h4><?php the_title(); ?></h4>
+                                            <p><?php the_field('short_description_news'); ?></p>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
 
-                    <div class="col-lg-6">
-                        <a href="#">
-                            <div class="pd-news-card pd-sm-news-card">
-                                <img src="<?php echo bloginfo('template_url') ?>/assets/img/dumJb.png">
-                                <div>
-                                    <h4>Face online interview</h4>
-                                    <p>Genesis Software</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <?php
+                        endwhile;
+                    endif;
+                    wp_reset_query();
+
+                    ?>
 
                     <div class="text-right pd-cep-div pd-mt-47">
                         <a href="#" class="light-red-link">View all public job posts <i class="fas fa-angle-right"></i></a>
                     </div>
-
 
 
                 </div>
@@ -374,137 +355,8 @@ get_header();
                         endwhile;
                     endif;
                     wp_reset_query();
-
                     ?>
-
-                    <?php   /*     <!-- card -->
-                    <div class="col-md-4 col-lg-4">
-                        <div class="pd-cal-card">
-                            <div class="pd-crd-bdy">
-                                <div class="pd-cal-date">
-                                    <div>
-                                        <h3>25</h3>
-                                    </div>
-                                    <div>
-                                        <p> <strong>November</strong></p>
-                                        <p>08.00 am - 06.30 pm</p>
-                                    </div>
-                                </div>
-                                <h4>Job Fair 2021</h4>
-                                <div class="pd-inf-cal-sc">
-                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
-                                    <!-- <p><i class="fas fa-male"></i>200 Seats</p> -->
-                                </div>
-                            </div>
-                            <div class="pd-b-o">
-                                <a href="#">Booking Open</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="col-md-4 col-lg-4">
-                        <div class="pd-cal-card">
-                            <div class="pd-crd-bdy">
-                                <div class="pd-cal-date">
-                                    <div>
-                                        <h3>02</h3>
-                                    </div>
-                                    <div>
-                                        <p> <strong>December</strong></p>
-                                        <p>08.00 am - 04.30 pm</p>
-                                    </div>
-                                </div>
-                                <h4>Graduate Training Programe</h4>
-                                <div class="pd-inf-cal-sc">
-                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
-                                    <p><i class="fas fa-male"></i>200 Seats</p>
-                                </div>
-                            </div>
-                            <div class="pd-b-o">
-                                <!-- <a href="#">Booking Open</a> -->
-                                <p>Coming Soon</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="col-md-4 col-lg-4">
-                        <div class="pd-cal-card">
-                            <div class="pd-crd-bdy">
-                                <div class="pd-cal-date">
-                                    <div>
-                                        <h3>08</h3>
-                                    </div>
-                                    <div>
-                                        <p> <strong>December</strong></p>
-                                        <p>08.00 am - 04.30 pm</p>
-                                    </div>
-                                </div>
-                                <h4>Graduate Training Programe</h4>
-                                <div class="pd-inf-cal-sc">
-                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
-                                    <p><i class="fas fa-male"></i>200 Seats</p>
-                                </div>
-                            </div>
-                            <div class="pd-b-o">
-                                <a href="#">Booking Open</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="col-md-4 col-lg-4">
-                        <div class="pd-cal-card">
-                            <div class="pd-crd-bdy">
-                                <div class="pd-cal-date">
-                                    <div>
-                                        <h3>14</h3>
-                                    </div>
-                                    <div>
-                                        <p> <strong>November</strong></p>
-                                        <p>08.00 am - 04.30 pm</p>
-                                    </div>
-                                </div>
-                                <h4>Graduate Training Programe</h4>
-                                <div class="pd-inf-cal-sc">
-                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
-                                    <p><i class="fas fa-male"></i>200 Seats</p>
-                                </div>
-                            </div>
-                            <div class="pd-b-o">
-                                <p>Coming Soon</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- card -->
-                    <div class="col-md-4 col-lg-4">
-                        <div class="pd-cal-card">
-                            <div class="pd-crd-bdy">
-                                <div class="pd-cal-date">
-                                    <div>
-                                        <h3>20</h3>
-                                    </div>
-                                    <div>
-                                        <p> <strong>November</strong></p>
-                                        <p>08.00 am - 04.30 pm</p>
-                                    </div>
-                                </div>
-                                <h4>Online Interview Training Programe</h4>
-                                <div class="pd-inf-cal-sc">
-                                    <p><i class="fas fa-map-marker-alt"></i> Ontario Center</p>
-                                    <p><i class="fas fa-male"></i>200 Seats</p>
-                                </div>
-                            </div>
-                            <div class="pd-b-o">
-                                <a href="#">Booking Open</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    */ ?>
-
+                
                 </div>
             </div>
 

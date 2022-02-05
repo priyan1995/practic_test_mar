@@ -1016,6 +1016,13 @@ input:focus{
     min-width: 200px;
     border-radius: 5px;
     transition: 0.5s;
+    border: 2px solid #ac1026;
+    ;
+}
+
+.pd-red-btn-sec input:hover{
+    color: #ac1026;
+    background: transparent;
 }
 
 .pd-banner-form .col-lg-6, .pd-banner-form .col-lg-12{

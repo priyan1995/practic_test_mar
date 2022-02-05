@@ -62,9 +62,6 @@ get_header();
 </section>
 
 
-
-
-
 <section class="pd-h-f-o-c-sec pd-padd pd-dbl-p-top pd-dbl-p-bot">
     <div class="container">
         <div class="row">

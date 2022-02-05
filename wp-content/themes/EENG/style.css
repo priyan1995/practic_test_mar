@@ -987,7 +987,7 @@ input:focus{
     padding-left: 20px;
     padding-right: 20px;
     z-index: 9999;
-    border-top-left-radius: 5%;
+    border-top-left-radius: 25%;
     border-bottom-left-radius: 15%;
 }
 

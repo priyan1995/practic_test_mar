@@ -977,7 +977,7 @@ input:focus{
 .pd-banner-form-div{
     position: absolute;
     top: 0;
-    background: #f7f7f7;
+    background: transparent;
     width: 41%;
     right: 0;
     height: 100%;
@@ -1302,6 +1302,7 @@ input:focus{
         position: relative;
         width: 100%;
         padding: 35px;
+        background: #f7f7f7;
     }
     .pd-bn-shade-3,
     .pd-bn-shade-2,

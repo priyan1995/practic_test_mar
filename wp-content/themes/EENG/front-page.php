@@ -512,33 +512,21 @@ get_header();
 
             <div class="col-12">
                 <div class="latest-gta-jobs">
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
-                    </div>
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
-                    </div>
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
-                    </div>
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
-                    </div>
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
-                    </div>
 
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
-                    </div>
+                    <?php
+                    $gta_jobs  = new WP_Query(array("post_type" => "gta_jobs", 'order' => 'Rand', "posts_per_page" => "9"));
+                    if ($gta_jobs->have_posts()) :
+                        while ($gta_jobs->have_posts()) :
+                            $gta_jobs->the_post();
+                    ?>
 
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
-                    </div>
-
-                    <div>
-                        <img src="<?php echo bloginfo('template_url') ?>/assets/img/latest-gta-job.jpg" class="w-100">
-                    </div>
+                            <div>
+                                <img src="<?php the_field('image_gta_jobs'); ?>" class="w-100">
+                            </div>
+                    <?php
+                        endwhile;
+                    endif;
+                    wp_reset_query(); ?>
 
                 </div>
 

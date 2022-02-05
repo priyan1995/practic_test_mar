@@ -523,6 +523,13 @@ a:hover{
 
 .latest-gta-jobs .slick-slide img{
     padding: 20px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.latest-gta-jobs .slick-slide img:hover{
+    transition: 0.5s;
+    filter: brightness(0.8);
 }
 
 .latest-gta-jobs  .slick-dots li{

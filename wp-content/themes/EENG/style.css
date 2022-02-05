@@ -957,6 +957,7 @@ input:focus{
     width: 100%;
     object-fit: cover;
     object-position: top left;
+    filter: brightness(0.8);
 }
 
 .pd-main-slider-inner-wrapper{

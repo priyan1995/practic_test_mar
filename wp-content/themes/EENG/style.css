@@ -1199,7 +1199,7 @@ input:focus{
 
     .header {
         background: white;
-        padding: 10px 0;
+        padding:  0;
     }
 
     button {
@@ -1284,6 +1284,56 @@ input:focus{
         width: fit-content;
         margin: auto;
     }
+    .pd-top-inputs{
+        display: none;
+    }
+    .pd-banner-form-div{
+        position: relative;
+        width: 100%;
+        padding: 35px;
+    }
+    .pd-bn-shade-3,
+    .pd-bn-shade-2,
+    .pd-bn-shade-1{
+        display: none;
+    }
+    .pd-main-slider-inner-wrapper {
+        height: 40vh;
+    }
+    .pd-banner-form label {
+        text-align: left;
+        width: 100%;
+    }
+    .pd-banner-form-div .pd-main-heading{
+        font-size: 24px;
+    }
+
+    .top-bar .logo-wrap img{
+        width:75%;
+    }
+
+    .pd-top-sign-up a{
+        padding: 7px;
+    min-width: 108px;
+    font-size: 12px;
+    }
+
+    input,textarea, select,option{
+        text-align: left;
+    }
+    
+    .pd-red-btn-sec input{
+        text-align: center !important;
+    }
+
+    .pd-red-btn-sec.text-center{
+        text-align: center !important;
+    }
+
+    .navbar-toggler{
+        filter: invert(1);
+    }
+    
 }
 
 @media (min-width:767px) and (max-width:992px) {

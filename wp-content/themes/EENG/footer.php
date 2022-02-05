@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-3">
+      <div class="col-lg-3">
         <div class="pd-footer-logo">
           <a rel="home" href="<?php echo esc_url(home_url('/')); ?>">
             <?php the_custom_logo(); ?>

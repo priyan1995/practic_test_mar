@@ -35,7 +35,7 @@ jQuery(document).ready(function () {
           arrows: true,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 3
+          slidesToShow: 1
         }
       },
       {
@@ -54,11 +54,21 @@ jQuery(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay:true,
+    autoplay: true,
     dots: true,
     infinite: true,
     speed: 300,
     centerPadding: '60px',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }]
   });
 
 
@@ -66,11 +76,11 @@ jQuery(document).ready(function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay:true,
+    autoplay: true,
     dots: true,
     infinite: true,
     speed: 300,
-    arrows:false,
+    arrows: false,
     centerPadding: '0px',
   });
 

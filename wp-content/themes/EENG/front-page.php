@@ -175,7 +175,7 @@ get_header();
 <section class="pos-rel pd-padd pd-latest-news-sec pd-dbl-p-top pd-dbl-p-bot">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-5 pd-cr-w-img">
                 <h3><?php the_field('title_ltj_job'); ?></h3>
 
 
@@ -211,7 +211,7 @@ get_header();
 
             </div>
             <div class="col-lg-7">
-                <h3><?php the_field('title_ltj2_job'); ?></h3>
+                <h3 class="pd-mob-am"><?php the_field('title_ltj2_job'); ?></h3>
                 <div class="row">
                     <div class="col-lg-12">
 
